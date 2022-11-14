@@ -70,6 +70,27 @@ build CMakeFiles/pongo.dir/src/VertexBuffer.cpp.o: CXX_COMPILER__pongo_Debug /ho
   OBJECT_DIR = CMakeFiles/pongo.dir
   OBJECT_FILE_DIR = CMakeFiles/pongo.dir/src
 
+build CMakeFiles/pongo.dir/src/IndexBuffer.cpp.o: CXX_COMPILER__pongo_Debug /home/coffe789/CLionProjects/pongo/src/IndexBuffer.cpp || cmake_object_order_depends_target_pongo
+  DEP_FILE = CMakeFiles/pongo.dir/src/IndexBuffer.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/coffe789/CLionProjects/pongo/deps/glfw/include
+  OBJECT_DIR = CMakeFiles/pongo.dir
+  OBJECT_FILE_DIR = CMakeFiles/pongo.dir/src
+
+build CMakeFiles/pongo.dir/src/VertexArray.cpp.o: CXX_COMPILER__pongo_Debug /home/coffe789/CLionProjects/pongo/src/VertexArray.cpp || cmake_object_order_depends_target_pongo
+  DEP_FILE = CMakeFiles/pongo.dir/src/VertexArray.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/coffe789/CLionProjects/pongo/deps/glfw/include
+  OBJECT_DIR = CMakeFiles/pongo.dir
+  OBJECT_FILE_DIR = CMakeFiles/pongo.dir/src
+
+build CMakeFiles/pongo.dir/src/VertexBufferLayout.cpp.o: CXX_COMPILER__pongo_Debug /home/coffe789/CLionProjects/pongo/src/VertexBufferLayout.cpp || cmake_object_order_depends_target_pongo
+  DEP_FILE = CMakeFiles/pongo.dir/src/VertexBufferLayout.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/coffe789/CLionProjects/pongo/deps/glfw/include
+  OBJECT_DIR = CMakeFiles/pongo.dir
+  OBJECT_FILE_DIR = CMakeFiles/pongo.dir/src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target pongo
@@ -78,7 +99,7 @@ build CMakeFiles/pongo.dir/src/VertexBuffer.cpp.o: CXX_COMPILER__pongo_Debug /ho
 #############################################
 # Link the executable pongo
 
-build pongo: CXX_EXECUTABLE_LINKER__pongo_Debug CMakeFiles/pongo.dir/src/main.cpp.o CMakeFiles/pongo.dir/src/Renderer.cpp.o CMakeFiles/pongo.dir/src/VertexBuffer.cpp.o | deps/glfw/src/libglfw3.a lib/libGLEWd.so.2.1.0 /usr/lib/x86_64-linux-gnu/librt.so /usr/lib/x86_64-linux-gnu/libm.so /usr/lib/x86_64-linux-gnu/libGL.so /usr/lib/x86_64-linux-gnu/libGLU.so || deps/glfw/src/libglfw3.a lib/libGLEWd.so lib/libGLEWd.so
+build pongo: CXX_EXECUTABLE_LINKER__pongo_Debug CMakeFiles/pongo.dir/src/main.cpp.o CMakeFiles/pongo.dir/src/Renderer.cpp.o CMakeFiles/pongo.dir/src/VertexBuffer.cpp.o CMakeFiles/pongo.dir/src/IndexBuffer.cpp.o CMakeFiles/pongo.dir/src/VertexArray.cpp.o CMakeFiles/pongo.dir/src/VertexBufferLayout.cpp.o | deps/glfw/src/libglfw3.a lib/libGLEWd.so.2.1.0 /usr/lib/x86_64-linux-gnu/librt.so /usr/lib/x86_64-linux-gnu/libm.so /usr/lib/x86_64-linux-gnu/libGL.so /usr/lib/x86_64-linux-gnu/libGLU.so || deps/glfw/src/libglfw3.a lib/libGLEWd.so lib/libGLEWd.so
   FLAGS = -g
   LINK_LIBRARIES = -Wl,-rpath,/home/coffe789/CLionProjects/pongo/cmake-build-debug/lib  deps/glfw/src/libglfw3.a  -lGL  lib/libGLEWd.so.2.1.0  -lpthread  /usr/lib/x86_64-linux-gnu/librt.so  -lm  -ldl  /usr/lib/x86_64-linux-gnu/libGL.so  /usr/lib/x86_64-linux-gnu/libGLU.so
   OBJECT_DIR = CMakeFiles/pongo.dir
