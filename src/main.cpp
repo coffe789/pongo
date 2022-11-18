@@ -6,10 +6,11 @@
 #include <sstream>
 
 #include "Renderer.h"
-#include "VertexBuffer.h"
-#include "IndexBuffer.h"
-#include "VertexArray.h"
-#include "VertexBufferLayout.h"
+//#include "VertexBuffer.h"
+//#include "IndexBuffer.h"
+//#include "VertexArray.h"
+//#include "VertexBufferLayout.h"
+#include "Paddle.h"
 
 struct ShaderProgramSource
 {
@@ -92,7 +93,7 @@ static unsigned int CreateShader(const std::string& vertexShader, const std::str
     return program;
 }
 
-int main(void)
+int main()
 {
     GLFWwindow* window;
 
@@ -105,7 +106,7 @@ int main(void)
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
     /* Create a windowed mode window and its OpenGL context */
-    window = glfwCreateWindow(640, 480, "Hello World", NULL, NULL);
+    window = glfwCreateWindow(640, 480, "PONGO", nullptr, nullptr);
     if (!window)
     {
         glfwTerminate();
@@ -122,46 +123,18 @@ int main(void)
 
     std::cout << glGetString(GL_VERSION) << std::endl;
 
-    float positions[8] = {
-            -0.5f, -0.5f,
-            0.5f, -0.5f,
-            0.5f, 0.5f,
-            -0.5f, 0.5f,
-
-    };
-    unsigned int indices[6] = {
-            0,1,2,
-            2, 3, 0,
-    };
-
-    // Either use many or just the one
-    unsigned int vao;
-    GLCall(glGenVertexArrays(1, &vao));
-    GLCall(glBindVertexArray(vao));
-
-    VertexArray va;
-    VertexBuffer vb(positions, 4 * 2 * sizeof(float));
-
-    VertexBufferLayout layout;
-    layout.Push(GL_FLOAT, 2);
-    va.AddBuffer(vb, layout);
-
-    glEnableVertexAttribArray(0);
-    glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, sizeof(float)*2, 0); // connect VBO to VAO
-
-    IndexBuffer ib(indices, 6);
-
     ShaderProgramSource source = ParseShader("res/shaders/shader.shader");
     unsigned int shader = CreateShader(source.VertexSource, source.FragmentSource);
-    GLCall(glUseProgram(shader));
 
     int location = glGetUniformLocation(shader, "u_Color");
     ASSERT(location != -1);
-    GLCall(glUniform4f(location, 0.2f, 0.3f, 0.8f, 1.0f));
 
 
     float r = 0.0f;
     float increment = 0.05f;
+
+    Paddle paddle(1,0);
+    Paddle paddle2(-1,0);
 
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))
@@ -173,15 +146,8 @@ int main(void)
         GLCall(glUniform4f(location, r, 0.3f, 0.8f, 1.0f));
 
 
-//        GLCall(glBindBuffer(GL_ARRAY_BUFFER, buffer)); // vao makes this unnecessary
-//        GLCall(glEnableVertexAttribArray(0)); // Can be replaced by vao
-//        GLCall(glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, sizeof(float) * 2, 0)); // Can be replaced by vao
-
-        va.Bind();
-        ib.Bind();
-
-        GLCall(glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr));
-
+        paddle.Render();
+        paddle2.Render();
 
 
         // Clear bindings
@@ -190,6 +156,7 @@ int main(void)
         GLCall(glBindBuffer(GL_ARRAY_BUFFER, 0));
         GLCall(glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0));
 
+        // color changing stuff
         if (r > 1.0f)
             increment = -0.05;
         else if (r < 0.0f)

@@ -1,7 +1,4 @@
-#ifndef PONGO_RENDERER_H
-#define PONGO_RENDERER_H
-
-#endif //PONGO_RENDERER_H
+#pragma once
 
 #include <GL/glew.h>
 #include <cstdlib>
