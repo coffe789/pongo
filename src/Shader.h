@@ -4,6 +4,8 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include <unordered_map>
+
 #include <GL/glew.h>
 #include "Renderer.h"
 
@@ -17,6 +19,7 @@ class Shader {
 private:
     std::string m_FilePath;
     unsigned int m_RendererID;
+    std::unordered_map<std::string, int> m_UniformLocationCache;
 public:
     Shader(const std::string& filepath);
     ~Shader();

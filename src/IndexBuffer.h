@@ -3,9 +3,6 @@
 class IndexBuffer
 {
 private:
-    IndexBuffer(const void *data, unsigned int size);
-
-// Refers to OpenGL in case we want to use a different renderer ig?
     unsigned int m_RendererID;
     unsigned int m_Count;
 public:

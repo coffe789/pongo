@@ -3,13 +3,14 @@
 #include "VertexBuffer.h"
 #include "VertexBufferLayout.h"
 #include "IndexBuffer.h"
+#include "Shader.h"
 
 #define PADDLE_ATTRIBUTES_N 8
 
 class Paddle {
 public:
     float x, y;
-    Paddle(float _x, float _y);
+    Paddle(Shader& _shader, float _x, float _y);
     ~Paddle();
     void AddToScene();
     void Render();
@@ -29,4 +30,5 @@ private:
     VertexBuffer vb;
     VertexBufferLayout vb_layout;
     IndexBuffer ib;
+    Shader shader;
 };
