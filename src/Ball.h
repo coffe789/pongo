@@ -1,21 +1,25 @@
 #pragma once
 
-#include "VertexArray.h"
-#include "IndexBuffer.h"
-#include "Shader.h"
+#include "Graphics/VertexArray.h"
+#include "Graphics/IndexBuffer.h"
+#include "Graphics/Shader.h"
+#include "utils.h"
 
 class Ball {
 public:
     Ball(Shader& _shader, float _x, float _y);
     ~Ball();
-    float x, y;
+    Vec2f position;
+    Vec2f velocity;
     void Render();
+    void Move();
+    void Collide();
 private:
     float positions[8] = {
-            -0.1f, 0.1f,
-            0.1f, 0.1f,
-            0.1f, -0.1f,
-            -0.1f, -0.1f,
+            -1.0f, 1.0f,
+            1.0f, 1.0f,
+            1.0f, -1.0f,
+            -1.0f, -1.0f,
     };
     unsigned int indices[6] = {
             0,1,3, 1, 2, 3

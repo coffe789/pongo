@@ -1,9 +1,9 @@
 #pragma once
-#include "VertexArray.h"
-#include "VertexBuffer.h"
-#include "VertexBufferLayout.h"
-#include "IndexBuffer.h"
-#include "Shader.h"
+#include "Graphics/VertexArray.h"
+#include "Graphics/VertexBuffer.h"
+#include "Graphics/VertexBufferLayout.h"
+#include "Graphics/IndexBuffer.h"
+#include "Graphics/Shader.h"
 
 #define PADDLE_ATTRIBUTES_N 8
 

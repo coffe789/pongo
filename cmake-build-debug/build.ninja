@@ -56,40 +56,40 @@ build CMakeFiles/pongo.dir/src/main.cpp.o: CXX_COMPILER__pongo_Debug /home/coffe
   OBJECT_DIR = CMakeFiles/pongo.dir
   OBJECT_FILE_DIR = CMakeFiles/pongo.dir/src
 
-build CMakeFiles/pongo.dir/src/Renderer.cpp.o: CXX_COMPILER__pongo_Debug /home/coffe789/CLionProjects/pongo/src/Renderer.cpp || cmake_object_order_depends_target_pongo
-  DEP_FILE = CMakeFiles/pongo.dir/src/Renderer.cpp.o.d
+build CMakeFiles/pongo.dir/src/Graphics/Renderer.cpp.o: CXX_COMPILER__pongo_Debug /home/coffe789/CLionProjects/pongo/src/Graphics/Renderer.cpp || cmake_object_order_depends_target_pongo
+  DEP_FILE = CMakeFiles/pongo.dir/src/Graphics/Renderer.cpp.o.d
   FLAGS = -g
   INCLUDES = -I/home/coffe789/CLionProjects/pongo/deps/glfw/include
   OBJECT_DIR = CMakeFiles/pongo.dir
-  OBJECT_FILE_DIR = CMakeFiles/pongo.dir/src
+  OBJECT_FILE_DIR = CMakeFiles/pongo.dir/src/Graphics
 
-build CMakeFiles/pongo.dir/src/VertexBuffer.cpp.o: CXX_COMPILER__pongo_Debug /home/coffe789/CLionProjects/pongo/src/VertexBuffer.cpp || cmake_object_order_depends_target_pongo
-  DEP_FILE = CMakeFiles/pongo.dir/src/VertexBuffer.cpp.o.d
+build CMakeFiles/pongo.dir/src/Graphics/VertexBuffer.cpp.o: CXX_COMPILER__pongo_Debug /home/coffe789/CLionProjects/pongo/src/Graphics/VertexBuffer.cpp || cmake_object_order_depends_target_pongo
+  DEP_FILE = CMakeFiles/pongo.dir/src/Graphics/VertexBuffer.cpp.o.d
   FLAGS = -g
   INCLUDES = -I/home/coffe789/CLionProjects/pongo/deps/glfw/include
   OBJECT_DIR = CMakeFiles/pongo.dir
-  OBJECT_FILE_DIR = CMakeFiles/pongo.dir/src
+  OBJECT_FILE_DIR = CMakeFiles/pongo.dir/src/Graphics
 
-build CMakeFiles/pongo.dir/src/IndexBuffer.cpp.o: CXX_COMPILER__pongo_Debug /home/coffe789/CLionProjects/pongo/src/IndexBuffer.cpp || cmake_object_order_depends_target_pongo
-  DEP_FILE = CMakeFiles/pongo.dir/src/IndexBuffer.cpp.o.d
+build CMakeFiles/pongo.dir/src/Graphics/IndexBuffer.cpp.o: CXX_COMPILER__pongo_Debug /home/coffe789/CLionProjects/pongo/src/Graphics/IndexBuffer.cpp || cmake_object_order_depends_target_pongo
+  DEP_FILE = CMakeFiles/pongo.dir/src/Graphics/IndexBuffer.cpp.o.d
   FLAGS = -g
   INCLUDES = -I/home/coffe789/CLionProjects/pongo/deps/glfw/include
   OBJECT_DIR = CMakeFiles/pongo.dir
-  OBJECT_FILE_DIR = CMakeFiles/pongo.dir/src
+  OBJECT_FILE_DIR = CMakeFiles/pongo.dir/src/Graphics
 
-build CMakeFiles/pongo.dir/src/VertexArray.cpp.o: CXX_COMPILER__pongo_Debug /home/coffe789/CLionProjects/pongo/src/VertexArray.cpp || cmake_object_order_depends_target_pongo
-  DEP_FILE = CMakeFiles/pongo.dir/src/VertexArray.cpp.o.d
+build CMakeFiles/pongo.dir/src/Graphics/VertexArray.cpp.o: CXX_COMPILER__pongo_Debug /home/coffe789/CLionProjects/pongo/src/Graphics/VertexArray.cpp || cmake_object_order_depends_target_pongo
+  DEP_FILE = CMakeFiles/pongo.dir/src/Graphics/VertexArray.cpp.o.d
   FLAGS = -g
   INCLUDES = -I/home/coffe789/CLionProjects/pongo/deps/glfw/include
   OBJECT_DIR = CMakeFiles/pongo.dir
-  OBJECT_FILE_DIR = CMakeFiles/pongo.dir/src
+  OBJECT_FILE_DIR = CMakeFiles/pongo.dir/src/Graphics
 
-build CMakeFiles/pongo.dir/src/VertexBufferLayout.cpp.o: CXX_COMPILER__pongo_Debug /home/coffe789/CLionProjects/pongo/src/VertexBufferLayout.cpp || cmake_object_order_depends_target_pongo
-  DEP_FILE = CMakeFiles/pongo.dir/src/VertexBufferLayout.cpp.o.d
+build CMakeFiles/pongo.dir/src/Graphics/VertexBufferLayout.cpp.o: CXX_COMPILER__pongo_Debug /home/coffe789/CLionProjects/pongo/src/Graphics/VertexBufferLayout.cpp || cmake_object_order_depends_target_pongo
+  DEP_FILE = CMakeFiles/pongo.dir/src/Graphics/VertexBufferLayout.cpp.o.d
   FLAGS = -g
   INCLUDES = -I/home/coffe789/CLionProjects/pongo/deps/glfw/include
   OBJECT_DIR = CMakeFiles/pongo.dir
-  OBJECT_FILE_DIR = CMakeFiles/pongo.dir/src
+  OBJECT_FILE_DIR = CMakeFiles/pongo.dir/src/Graphics
 
 build CMakeFiles/pongo.dir/src/Paddle.cpp.o: CXX_COMPILER__pongo_Debug /home/coffe789/CLionProjects/pongo/src/Paddle.cpp || cmake_object_order_depends_target_pongo
   DEP_FILE = CMakeFiles/pongo.dir/src/Paddle.cpp.o.d
@@ -105,8 +105,22 @@ build CMakeFiles/pongo.dir/src/Ball.cpp.o: CXX_COMPILER__pongo_Debug /home/coffe
   OBJECT_DIR = CMakeFiles/pongo.dir
   OBJECT_FILE_DIR = CMakeFiles/pongo.dir/src
 
-build CMakeFiles/pongo.dir/src/Shader.cpp.o: CXX_COMPILER__pongo_Debug /home/coffe789/CLionProjects/pongo/src/Shader.cpp || cmake_object_order_depends_target_pongo
-  DEP_FILE = CMakeFiles/pongo.dir/src/Shader.cpp.o.d
+build CMakeFiles/pongo.dir/src/Graphics/Shader.cpp.o: CXX_COMPILER__pongo_Debug /home/coffe789/CLionProjects/pongo/src/Graphics/Shader.cpp || cmake_object_order_depends_target_pongo
+  DEP_FILE = CMakeFiles/pongo.dir/src/Graphics/Shader.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/coffe789/CLionProjects/pongo/deps/glfw/include
+  OBJECT_DIR = CMakeFiles/pongo.dir
+  OBJECT_FILE_DIR = CMakeFiles/pongo.dir/src/Graphics
+
+build CMakeFiles/pongo.dir/src/utils.cpp.o: CXX_COMPILER__pongo_Debug /home/coffe789/CLionProjects/pongo/src/utils.cpp || cmake_object_order_depends_target_pongo
+  DEP_FILE = CMakeFiles/pongo.dir/src/utils.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I/home/coffe789/CLionProjects/pongo/deps/glfw/include
+  OBJECT_DIR = CMakeFiles/pongo.dir
+  OBJECT_FILE_DIR = CMakeFiles/pongo.dir/src
+
+build CMakeFiles/pongo.dir/src/Game.cpp.o: CXX_COMPILER__pongo_Debug /home/coffe789/CLionProjects/pongo/src/Game.cpp || cmake_object_order_depends_target_pongo
+  DEP_FILE = CMakeFiles/pongo.dir/src/Game.cpp.o.d
   FLAGS = -g
   INCLUDES = -I/home/coffe789/CLionProjects/pongo/deps/glfw/include
   OBJECT_DIR = CMakeFiles/pongo.dir
@@ -120,7 +134,7 @@ build CMakeFiles/pongo.dir/src/Shader.cpp.o: CXX_COMPILER__pongo_Debug /home/cof
 #############################################
 # Link the executable pongo
 
-build pongo: CXX_EXECUTABLE_LINKER__pongo_Debug CMakeFiles/pongo.dir/src/main.cpp.o CMakeFiles/pongo.dir/src/Renderer.cpp.o CMakeFiles/pongo.dir/src/VertexBuffer.cpp.o CMakeFiles/pongo.dir/src/IndexBuffer.cpp.o CMakeFiles/pongo.dir/src/VertexArray.cpp.o CMakeFiles/pongo.dir/src/VertexBufferLayout.cpp.o CMakeFiles/pongo.dir/src/Paddle.cpp.o CMakeFiles/pongo.dir/src/Ball.cpp.o CMakeFiles/pongo.dir/src/Shader.cpp.o | deps/glfw/src/libglfw3.a lib/libGLEWd.so.2.1.0 /usr/lib/x86_64-linux-gnu/librt.so /usr/lib/x86_64-linux-gnu/libm.so /usr/lib/x86_64-linux-gnu/libGL.so /usr/lib/x86_64-linux-gnu/libGLU.so || deps/glfw/src/libglfw3.a lib/libGLEWd.so lib/libGLEWd.so
+build pongo: CXX_EXECUTABLE_LINKER__pongo_Debug CMakeFiles/pongo.dir/src/main.cpp.o CMakeFiles/pongo.dir/src/Graphics/Renderer.cpp.o CMakeFiles/pongo.dir/src/Graphics/VertexBuffer.cpp.o CMakeFiles/pongo.dir/src/Graphics/IndexBuffer.cpp.o CMakeFiles/pongo.dir/src/Graphics/VertexArray.cpp.o CMakeFiles/pongo.dir/src/Graphics/VertexBufferLayout.cpp.o CMakeFiles/pongo.dir/src/Paddle.cpp.o CMakeFiles/pongo.dir/src/Ball.cpp.o CMakeFiles/pongo.dir/src/Graphics/Shader.cpp.o CMakeFiles/pongo.dir/src/utils.cpp.o CMakeFiles/pongo.dir/src/Game.cpp.o | deps/glfw/src/libglfw3.a lib/libGLEWd.so.2.1.0 /usr/lib/x86_64-linux-gnu/librt.so /usr/lib/x86_64-linux-gnu/libm.so /usr/lib/x86_64-linux-gnu/libGL.so /usr/lib/x86_64-linux-gnu/libGLU.so || deps/glfw/src/libglfw3.a lib/libGLEWd.so lib/libGLEWd.so
   FLAGS = -g
   LINK_LIBRARIES = -Wl,-rpath,/home/coffe789/CLionProjects/pongo/cmake-build-debug/lib  deps/glfw/src/libglfw3.a  -lGL  lib/libGLEWd.so.2.1.0  -lpthread  /usr/lib/x86_64-linux-gnu/librt.so  -lm  -ldl  /usr/lib/x86_64-linux-gnu/libGL.so  /usr/lib/x86_64-linux-gnu/libGLU.so
   OBJECT_DIR = CMakeFiles/pongo.dir
