@@ -3,7 +3,8 @@
 #include "Graphics/VertexArray.h"
 #include "Graphics/IndexBuffer.h"
 #include "Graphics/Shader.h"
-#include "utils.h"
+#include "vec2.h"
+#include "Paddle.h"
 
 class Ball {
 public:
@@ -13,7 +14,7 @@ public:
     Vec2f velocity;
     void Render();
     void Move();
-    void Collide();
+    void Collide(Paddle collider);
 private:
     float positions[8] = {
             -1.0f, 1.0f,

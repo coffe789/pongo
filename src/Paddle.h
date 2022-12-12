@@ -16,11 +16,14 @@ public:
     void Render();
 
 private:
+    const float extent_x = 0.1f;
+    const float extent_y = 0.4f;
+
     float positions[PADDLE_ATTRIBUTES_N] = {
-            -0.1f, 0.4f,
-            0.1f, 0.4f,
-            0.1f, -0.4f,
-            -0.1f, -0.4f,
+            -extent_x, extent_y,
+            extent_x, extent_y,
+            extent_x, -extent_y,
+            -extent_x, -extent_y,
     };
     unsigned int indices[6] = {
             0,1,3, 1, 2, 3

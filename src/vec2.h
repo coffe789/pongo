@@ -8,4 +8,6 @@ struct Vec2f
     float y;
     Vec2f operator + (Vec2f const &obj);
     Vec2f operator - (Vec2f const &obj);
+    Vec2f operator * (Vec2f const &obj);
+    Vec2f operator / (Vec2f const &obj);
 };

@@ -36,6 +36,6 @@ void Ball::Move() {
     if (position.y < -1 || position.y > 1) velocity.y *= -1;
 }
 
-void Ball::Collide() {
+void Ball::Collide(Paddle collider) {
 
 }

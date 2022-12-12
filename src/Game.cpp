@@ -29,13 +29,13 @@ void Game::Update() {
 }
 
 void Game::DoPhysics() {
-    ball.Update();
+    ball.Move();
 }
 
 void Game::Render() {
+    ball.Render();
     player.Render();
     enemy.Render();
-    ball.Render();
 }
 
 void Game::DoCollisions() {
