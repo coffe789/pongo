@@ -40,12 +40,16 @@ int main()
 
     std::cout << glGetString(GL_VERSION) << std::endl;
 
-    Game game;
+    Game game(window);
+    float lastTime = 0.0f;
     while (!glfwWindowShouldClose(window))
     {
         GLCall(glClear(GL_COLOR_BUFFER_BIT));
 
-        game.Update();
+        double currentTime = glfwGetTime();
+        float deltaTime = float(currentTime - lastTime);
+        lastTime = currentTime;
+        game.Update(deltaTime);
 
         glfwSwapBuffers(window);
 

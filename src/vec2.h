@@ -9,5 +9,6 @@ struct Vec2f
     Vec2f operator + (Vec2f const &obj);
     Vec2f operator - (Vec2f const &obj);
     Vec2f operator * (Vec2f const &obj);
+    Vec2f operator * (float const &obj);
     Vec2f operator / (Vec2f const &obj);
 };

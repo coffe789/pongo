@@ -33,3 +33,10 @@ Vec2f Vec2f::operator / (Vec2f const &obj) {
     res.y = y / obj.y;
     return res;
 }
+
+Vec2f Vec2f::operator*(const float &obj) {
+    Vec2f res;
+    res.x = x * obj;
+    res.y = y * obj;
+    return res;
+}

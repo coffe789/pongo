@@ -4,20 +4,23 @@
 #include "Graphics/VertexBufferLayout.h"
 #include "Graphics/IndexBuffer.h"
 #include "Graphics/Shader.h"
+#include "vec2.h"
 
 #define PADDLE_ATTRIBUTES_N 8
 
 class Paddle {
 public:
-    float x, y;
+    Vec2f position;
+    Vec2f velocity;
     Paddle(Shader& _shader, float _x, float _y);
     ~Paddle();
-    void AddToScene();
     void Render();
+    void Move(float deltaTime);
 
-private:
     const float extent_x = 0.1f;
     const float extent_y = 0.4f;
+
+private:
 
     float positions[PADDLE_ATTRIBUTES_N] = {
             -extent_x, extent_y,

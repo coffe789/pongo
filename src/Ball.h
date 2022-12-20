@@ -12,9 +12,9 @@ public:
     ~Ball();
     Vec2f position;
     Vec2f velocity;
+    float radius;
     void Render();
-    void Move();
-    void Collide(Paddle collider);
+    void Move(float deltaTime);
 private:
     float positions[8] = {
             -1.0f, 1.0f,
