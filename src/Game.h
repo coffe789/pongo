@@ -3,10 +3,12 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 #include <cmath>
+#include <glm/vec2.hpp>
 #include "Graphics/Renderer.h"
 #include "Paddle.h"
 #include "Graphics/Shader.h"
 #include "Ball.h"
+
 
 class Game {
 public:

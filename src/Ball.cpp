@@ -33,7 +33,7 @@ void Ball::Render() {
 }
 
 void Ball::Move(float deltaTime) {
-    position = position + velocity * deltaTime;
+    position += velocity * deltaTime;
     if (position.x < -1 || position.x > 1)
     {
         velocity.x *= -1;

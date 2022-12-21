@@ -1,17 +1,17 @@
 #pragma once
 
+#include <glm/vec2.hpp>
 #include "Graphics/VertexArray.h"
 #include "Graphics/IndexBuffer.h"
 #include "Graphics/Shader.h"
-#include "vec2.h"
 #include "Paddle.h"
 
 class Ball {
 public:
     Ball(Shader& _shader, float _x, float _y);
     ~Ball();
-    Vec2f position;
-    Vec2f velocity;
+    glm::vec2 position;
+    glm::vec2 velocity;
     float radius;
     void Render();
     void Move(float deltaTime);

@@ -19,7 +19,7 @@ Game::~Game() {
 void Game::Update(float deltaTime) {
     DoPhysics(deltaTime);
     if (DoCollisions(player, ball) || DoCollisions(enemy, ball)) {
-        ball.position = ball.position - ball.velocity * deltaTime;
+        ball.position -= ball.velocity * deltaTime;
         ball.velocity.x *= -1;
 }
     Render();
@@ -62,10 +62,10 @@ void Game::Render() {
 }
 
 bool Game::DoCollisions(Paddle &p, Ball &b) {
-    Vec2f diff = b.position - p.position;
+    glm::vec2 diff = b.position - p.position;
     diff.x = std::max(-p.extent_x, std::min(p.extent_x, diff.x));
     diff.y = std::max(-p.extent_y, std::min(p.extent_y, diff.y));
-    diff = diff + p.position - b.position;
+    diff += p.position - b.position;
 
     return ball.radius >= (sqrt(diff.x *  diff.x + diff.y * diff.y));
 }
